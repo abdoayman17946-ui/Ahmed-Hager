@@ -199,13 +199,14 @@
             display: block;
         }
 
-        /* التصميم الراقي الجديد المدمج بين القاعة والتاريخ */
+        /* تصميم الحاوية لضمان التوسيط التام والمسافة المتوسطة */
         .wedding-badge {
-            margin-top: 30px;
+            margin-top: 25px;
             display: inline-flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 100%;
         }
 
         .venue-highlight {
@@ -218,13 +219,13 @@
         }
 
         .badge-divider {
-            width: 60px;
+            width: 80px;
             height: 1px;
             background: linear-gradient(to right, transparent, var(--primary), transparent);
-            margin: 8px 0;
+            margin: 12px 0; /* مسافة متوسطة ومتناسقة جداً بين العناصر */
         }
 
-        /* تم تعديل الخط هنا ليتطابق بالكامل مع القاعة فوقها وتوجيه النص ليكون متناسق رأسيًا */
+        /* تعديل التوسيط والخط للتاريخ */
         .venue-date {
             font-size: 1.5rem;
             color: var(--primary);
@@ -232,8 +233,12 @@
             letter-spacing: 2px;
             text-shadow: 0 2px 10px rgba(0,0,0,0.5);
             margin: 0;
-            display: block;
-            direction: ltr; /* لضمان ترتيب أرقام التاريخ بشكل صحيح */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            direction: ltr; /* لضمان قراءة التاريخ بشكل سليم وعادل */
+            width: 100%;
         }
 
         /* 3. الكروت والعداد التنازلي المرن */
@@ -415,7 +420,7 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1200">Ahmed & Hager</h1>
                 <p data-aos="fade-up" data-aos-delay="400" style="font-size: 1.2rem; font-weight: 300; margin-bottom: 5px;">نترقب حضوركم لتكتمل بهجة ليلتنا</p>
                 
-                <!-- التصميم الفاخر الجديد بعد تعديل الخط والتناسق التام -->
+                <!-- تصحيح التوسيط والمسافات للتاريخ والقاعة -->
                 <div data-aos="fade-up" data-aos-delay="500" class="wedding-badge">
                     <h3 class="venue-highlight">Grand Palace 📍</h3>
                     <div class="badge-divider"></div>
