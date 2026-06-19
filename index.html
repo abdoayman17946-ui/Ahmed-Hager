@@ -116,10 +116,10 @@
             position: relative;
         }
 
-        /* تكبير السهم ليكون أوضح وأكبر حجماً */
+        /* إنزال السهم لأسفل وتعديل موضعه */
         .scroll-arrow {
             position: absolute;
-            bottom: 95px; 
+            bottom: 35px; 
             width: 65px;  
             height: 65px; 
             background: rgba(255, 255, 255, 0.93);
@@ -165,6 +165,7 @@
             position: relative;
             z-index: 2;
             padding: 0 10px;
+            margin-bottom: 40px; /* مسافة أمان لعدم التداخل مع السهم */
         }
 
         .hero-content h1 {
@@ -196,6 +197,17 @@
             margin: 0 auto;
             line-height: 1.6;
             display: block;
+        }
+
+        /* تنسيق جملة جراند بالاس المضافة */
+        .venue-highlight {
+            font-size: 1.4rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-top: 15px;
+            display: block;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
         }
 
         /* 3. الكروت والعداد التنازلي المرن */
@@ -375,9 +387,11 @@
                 <p data-aos="fade-up" class="basmala-text">بِـسْـمِ اللَّهِ الـرَّحْـمَٰـنِ الـرَّحِـيـمِ</p>
                 <p data-aos="fade-up" data-aos-delay="200" class="verse-text">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
                 <h1 data-aos="zoom-in" data-aos-duration="1200">Ahmed & Hager</h1>
-                <p data-aos="fade-up" data-aos-delay="400" style="font-size: 1.2rem; font-weight: 300;">نترقب حضوركم لتكتمل بهجة ليلتنا</p>
+                <p data-aos="fade-up" data-aos-delay="400" style="font-size: 1.2rem; font-weight: 300; margin-bottom: 5px;">نترقب حضوركم لتكتمل بهجة ليلتنا</p>
+                <!-- إضافة جملة Grand Palace بالأسفل هنا -->
+                <span data-aos="fade-up" data-aos-delay="500" class="venue-highlight">( Grand Palace )</span>
             </div>
-            <!-- سهم الانتقال للقسم الثاني -->
+            <!-- سهم الانتقال للقسم الثاني (تم إنزاله لأسفل بنجاح) -->
             <div class="scroll-arrow" onclick="scrollToSection('sec-2')">🔽</div>
         </section>
 
