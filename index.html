@@ -199,15 +199,35 @@
             display: block;
         }
 
-        /* تنسيق جملة جراند بالاس المضافة */
+        /* تنسيق حاوية تفاصيل القاعة والتاريخ */
+        .venue-info-box {
+            margin-top: 25px;
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(197, 168, 128, 0.3);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
         .venue-highlight {
             font-size: 1.4rem;
             color: var(--primary);
             font-weight: 700;
-            margin-top: 15px;
             display: block;
             letter-spacing: 1px;
             text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+            margin-bottom: 5px;
+        }
+
+        .venue-date {
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: 300;
+            display: block;
+            letter-spacing: 2px;
+            opacity: 0.9;
         }
 
         /* 3. الكروت والعداد التنازلي المرن */
@@ -388,11 +408,14 @@
                 <p data-aos="fade-up" data-aos-delay="200" class="verse-text">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
                 <h1 data-aos="zoom-in" data-aos-duration="1200">Ahmed & Hager</h1>
                 <p data-aos="fade-up" data-aos-delay="400" style="font-size: 1.2rem; font-weight: 300; margin-bottom: 5px;">نترقب حضوركم لتكتمل بهجة ليلتنا</p>
-                <!-- إضافة جملة Grand Palace بالأسفل هنا -->
-                <span data-aos="fade-up" data-aos-delay="500" class="venue-highlight"> Grand Palace📍 </span>
-                <span data-aos="fade-up" data-aos-delay="500" class="venue-highlight">4/7/2026 </span>
+                
+                <!-- التنسيق الجديد المدمج والمحسن لـ Grand Palace والتاريخ -->
+                <div data-aos="fade-up" data-aos-delay="500" class="venue-info-box">
+                    <span class="venue-highlight">Grand Palace 📍</span>
+                    <span class="venue-date">4 / 7 / 2026</span>
+                </div>
             </div>
-            <!-- سهم الانتقال للقسم الثاني (تم إنزاله لأسفل بنجاح) -->
+            <!-- سهم الانتقال للقسم الثاني -->
             <div class="scroll-arrow" onclick="scrollToSection('sec-2')">🔽</div>
         </section>
 
@@ -411,7 +434,6 @@
 
                 <p style="margin-top: 20px;">📍 <strong>المكان:</strong>   قاعة جراند بلازا  </p>
                 <p style="margin-top: 20px;">📍 <strong></strong>   قويسنا - طريق شبين الكوم - داخلة شمنديل </p>
-                <!-- الزر هنا تم تعديله ليصبح باللون الأخضر المتناسق مع الهوية المخصصة للواتساب -->
                 <a href="https://maps.app.goo.gl/4ePV6JemNKTGTWh47" target="_blank" class="btn btn-whatsapp">عرض الموقع على الخريطة</a>
             </div>
             <!-- سهم الانتقال للقسم الثالث -->
