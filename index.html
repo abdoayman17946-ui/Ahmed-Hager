@@ -224,7 +224,7 @@
             margin: 8px 0;
         }
 
-        /* تم تعديل الخط هنا ليتطابق بالكامل مع القاعة فوقها */
+        /* تم تعديل الخط هنا ليتطابق بالكامل مع القاعة فوقها وتوجيه النص ليكون متناسق رأسيًا */
         .venue-date {
             font-size: 1.5rem;
             color: var(--primary);
@@ -232,6 +232,8 @@
             letter-spacing: 2px;
             text-shadow: 0 2px 10px rgba(0,0,0,0.5);
             margin: 0;
+            display: block;
+            direction: ltr; /* لضمان ترتيب أرقام التاريخ بشكل صحيح */
         }
 
         /* 3. الكروت والعداد التنازلي المرن */
@@ -413,12 +415,11 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1200">Ahmed & Hager</h1>
                 <p data-aos="fade-up" data-aos-delay="400" style="font-size: 1.2rem; font-weight: 300; margin-bottom: 5px;">نترقب حضوركم لتكتمل بهجة ليلتنا</p>
                 
-                <!-- التصميم الفاخر الجديد بعد تعديل الخط والتناسق -->
+                <!-- التصميم الفاخر الجديد بعد تعديل الخط والتناسق التام -->
                 <div data-aos="fade-up" data-aos-delay="500" class="wedding-badge">
                     <h3 class="venue-highlight">Grand Palace 📍</h3>
                     <div class="badge-divider"></div>
-                    <span class="venue-date">   "  2026 / 7 / 4  "  </span>
-                    <h3 class="venue-highlight"> "  2026 / 7 / 4  " </h3>
+                    <span class="venue-date">4/7/2026</span>
                 </div>
             </div>
             <!-- سهم الانتقال للقسم الثاني -->
