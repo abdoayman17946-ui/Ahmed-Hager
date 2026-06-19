@@ -199,35 +199,38 @@
             display: block;
         }
 
-        /* تنسيق حاوية تفاصيل القاعة والتاريخ */
-        .venue-info-box {
-            margin-top: 25px;
-            display: inline-block;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 10px 25px;
-            border-radius: 15px;
-            border: 1px solid rgba(197, 168, 128, 0.3);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
+        /* التصميم الراقي الجديد المدمج بين القاعة والتاريخ */
+        .wedding-badge {
+            margin-top: 30px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .venue-highlight {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             color: var(--primary);
-            font-weight: 700;
-            display: block;
-            letter-spacing: 1px;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-            margin-bottom: 5px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            margin: 0;
+        }
+
+        .badge-divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--primary), transparent);
+            margin: 8px 0;
         }
 
         .venue-date {
-            font-size: 1.1rem;
-            color: #fff;
+            font-size: 1.2rem;
+            color: #ffffff;
             font-weight: 300;
-            display: block;
-            letter-spacing: 2px;
-            opacity: 0.9;
+            letter-spacing: 3px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            margin: 0;
         }
 
         /* 3. الكروت والعداد التنازلي المرن */
@@ -409,9 +412,10 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1200">Ahmed & Hager</h1>
                 <p data-aos="fade-up" data-aos-delay="400" style="font-size: 1.2rem; font-weight: 300; margin-bottom: 5px;">نترقب حضوركم لتكتمل بهجة ليلتنا</p>
                 
-                <!-- التنسيق الجديد المدمج والمحسن لـ Grand Palace والتاريخ -->
-                <div data-aos="fade-up" data-aos-delay="500" class="venue-info-box">
-                    <span class="venue-highlight">Grand Palace 📍</span>
+                <!-- التصميم الفاخر الجديد (بدون حاويات داكنة ومقيد بخط ذهبي ناعم) -->
+                <div data-aos="fade-up" data-aos-delay="500" class="wedding-badge">
+                    <h3 class="venue-highlight">Grand Palace 📍</h3>
+                    <div class="badge-divider"></div>
                     <span class="venue-date">4 / 7 / 2026</span>
                 </div>
             </div>
